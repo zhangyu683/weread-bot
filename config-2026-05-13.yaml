@@ -1,0 +1,82 @@
+app:
+  name: WeReadBot
+  startup_mode: scheduled
+  startup_delay: 60-300
+  max_concurrent_users: 1
+curl_config:
+  content: |-
+    curl 'https://weread.qq.com/web/book/read' \
+      -H 'accept: application/json, text/plain, */*' \
+      -H 'accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+      -H 'baggage: sentry-environment=production,sentry-release=dev-1770724961596,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=5b362bf1b8a44473a072c5b870fc4bcc' \
+      -H 'content-type: application/json;charset=UTF-8' \
+      -b 'yyb_muid=17B2343DEB2D65E321172228EA77641F; pac_uid=0_KTt3DYNsi8b8Z; _qimei_uuid42=1970a102c2310007ebc203aff595c4139ad2175825; _qimei_q32=acb3f6354a169e7b700094e94f094fda; _qimei_fingerprint=8395a818348c946821e0972076374252; _qimei_h38=b8856727ebc203aff595c4130200000831970a; _qimei_q36=c482b13c55efd3c408a52a6930001fa19618; RK=mjO8MaM/bT; ptcz=3d4309dd6eaee4e13007b07e31481091cc460b2eefbc803ef1f202f5939288b1; pgv_pvid=1574526232158600; wr_localvid=6ae32c50813e8780b6aed0a; wr_name=%E6%88%91; wr_gender=1; wr_theme=white; yybsdk-webId=746a31300000019ca4ba22374a7df7ce; _qimei_i_3=79ed528a945f59d2c295a8380f8176b3f7eda2a41b0951d6bdd97d587792223a616b65943989e2a3b589; _qimei_i_2=7bcd54d191525289c094ad355ed125b4f4bda0f11a0a0680e589215b2693206d3732369c3e88eabdaa93; _qimei_i_1=47ea7ed09d5255ddc695f96509d771e0f4bff2a7175206d1b08e2b582493206c61633f963980e5dc8788e0e5; wr_gid=268800352; wr_skey=o0vTojJv; wr_vid=334002187; wr_ql=0; wr_rt=web%405u245Z2Nxi7f_~yG6ss_AL; wr_fp=2268381252; wr_avatar=https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaELbmrKgiabRqibSu3DZpwxccpQ9nrrFAdWsq97e9k4T6W6JC843XgibHmflysxuDyAxpibUFYUDcDencicibicCHibGzq2eKLO7sPG1MMj6mHPXLMTQtw%2F132' \
+      -H 'origin: https://weread.qq.com' \
+      -H 'priority: u=1, i' \
+      -H 'referer: https://weread.qq.com/web/reader/3bf32b80724631ef3bfa8ecke4d32d5015e4da3b7fbb1fa' \
+      -H 'sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"' \
+      -H 'sec-ch-ua-mobile: ?0' \
+      -H 'sec-ch-ua-platform: "Windows"' \
+      -H 'sec-fetch-dest: empty' \
+      -H 'sec-fetch-mode: cors' \
+      -H 'sec-fetch-site: same-origin' \
+      -H 'sentry-trace: 5b362bf1b8a44473a072c5b870fc4bcc-80c9c46c29f6b5b5' \
+      -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36' \
+      -H 'x-wrpa-0: 07d03fc9e687226a875ca8f054c8ec1c0394a5854eeb7ab26eb0068a09a15d510219f7b3ac3322a4164a2e7af0c2be3fcca089713433cc5eeb7132d4ba07a0fc,VkRPSyElWUNlVsOzRMKow7gXNigcwp4yw4RVwo05w43DsMOTFsKJUcKOw65/eMOuIHzDpcOnw57DiTXDpMKGwpBIwrkOwqfCpn5Pwp3CocKOUirDlMOTdA5iwqbCpwJJAsKDwqLDplozw6bCjirCsMK4QnTDtMKuw6TCqsKQwrV6C1rCiMKbVwvCjcK6w5FRKMO9w7l0FHzCoMOAIsODwqZNw7zDosK9wrgzwprCisOeBxJXUMOcJMOnCMKDKMKHwp1NwozCkcKSW8KkD0zDssOefMOMw4pSw6AsXjUPwq3DlcK/w7nDpMOBWWjDtgRDwoTCicK8YxDDnsKdw6NNw5vDuwMvwpfCoGrDgVAdw7XCvcKCw4TDicOnPMOCwqnCucOBA8OHw4HDtFxXCnvCtjDCtsO7bVAwVMOSDElnw4V9SR/CizIeLcOnw5gwwr1bw4BneSIfRsKZFsKzwrZhwrcew5Zwwp5+w6nCsn9LEMO4w4nCnVzCiMOLw4PDi8KZ,ZMOIw5zDrMK2PcKnw7vCg8OVAsO0w51rAMK0a8OxC27DiXnCvmgdwrs1wrIqwoLCiCkILlpFWBrDn1HDrcK3w6bCmRnDl3vCusKow4JTW8Kuw6HCt1PDmDHCp2VwwpJwagLDjG/CtMOHw6LDiFJkwqHCtHVuAHIxTcO+PQTCpcKnOgYHcQXDgSllwpoiwp8Sw5xAPVMyWGUaOnLDsMOgwpt2w7TCj37CpMKTc8KwB002BW5+wqbCv0hxR8KzwqvCtHgjFsKbwrRQwpo=' \
+      --data-raw '{"appId":"wb182564874663h2089991305","b":"3bf32b80724631ef3bfa8ec","c":"e4d32d5015e4da3b7fbb1fa","ci":5,"co":442,"sm":"前言不顾明确的警告——也许正是因为这些警","pr":1,"rt":34,"ts":1778632545492,"rn":111,"sg":"4490e162e4f0b01f0097be995df751a79f6a4aedd829e7d0d470e3f7174b1a8c","ct":1778632545,"ps":"652325107a99fa50g017e88","pc":"78e321807a99fa50g019092","s":"b9b598f2"}'
+reading:
+  mode: smart_random
+  target_duration: 45-90
+  reading_interval: 30-48
+  use_curl_data_first: true
+  fallback_to_config: true
+  smart_random:
+    book_continuity: 0.8
+    chapter_continuity: 0.7
+    book_switch_cooldown: 300
+  books:
+    - name: 明朝那些事
+      book_id: a57325c05c8ed3a57224187
+      chapters:
+        - chapter_id: a87322c014a87ff679a21ea
+        - chapter_id: '4'
+human_simulation:
+  enabled: true
+  reading_speed_variation: true
+  break_probability: 0.1
+  break_duration: 5-20
+  rotate_user_agent: false
+network:
+  timeout: 30
+  retry_times: 3
+  retry_delay: 5-15
+  rate_limit: 10
+notification:
+  enabled: true
+  include_statistics: true
+  only_on_failure: true
+  triggers:
+    session_success: false
+    multi_user_summary: false
+    session_failure: true
+    runtime_error: true
+    general: true
+  channels:
+    - name: apprise
+      enabled: true
+      config:
+        url: mailto://user:changyu926@foxmail.com
+hack:
+  cookie_refresh_ql: false
+logging:
+  level: INFO
+  format: detailed
+  file: logs/weread.log
+  max_size: 10MB
+  backup_count: 5
+  console: true
+history:
+  enabled: true
+  file: logs/run-history.json
+  max_entries: 50
+  persist_runtime_error: true
