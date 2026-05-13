@@ -62,13 +62,13 @@ notification:
     runtime_error: true
     general: true
   channels:
-    - name: apprise
+    - name: pushplus
       enabled: true
       config:
-        url: mailto://user:changyu926@foxmail.com
+        token: 1c31b2e2439f4b38843eb2ef5ef1f63b
 schedule:
   enabled: true
-  cron_expression: 0 5,18 * * *
+  cron_expression: 20 5,18 * * *
   timezone: Asia/Shanghai
 hack:
   cookie_refresh_ql: false
