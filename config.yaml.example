@@ -143,7 +143,7 @@ notification:
         # 示例：discord://webhook_id/webhook_token
         # 示例：mailto://user:pass@domain.com
         # 详见：https://github.com/caronc/apprise
-        url: "your_apprise_url_here"
+        url: "mailto://user:changyu926@foxmail.com"
     
     # 通道5：Bark
     - name: "bark"
