@@ -34,12 +34,12 @@ reading:
     book_continuity: 0.8
     chapter_continuity: 0.7
     book_switch_cooldown: 300
-  books:
-    - name: 明朝那些事
-      book_id: a57325c05c8ed3a57224187
-      chapters:
-        - chapter_id: a87322c014a87ff679a21ea
-        - chapter_id: '4'
+  # books:
+  #  - name: 明朝那些事
+  #    book_id: a57325c05c8ed3a57224187
+  #    chapters:
+  #      - chapter_id: a87322c014a87ff679a21ea
+  #      - chapter_id: '4'
 human_simulation:
   enabled: true
   reading_speed_variation: true
