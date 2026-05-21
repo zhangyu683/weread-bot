@@ -6,24 +6,24 @@ app:
 curl_config:
   content: |-
     curl 'https://weread.qq.com/web/book/read' \
-      -H 'accept: application/json, text/plain, */*' \
-      -H 'accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
-      -H 'baggage: sentry-environment=production,sentry-release=dev-1770724961596,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=dd69a1cab61c475c8fc7b86762b6b7f7' \
-      -H 'content-type: application/json;charset=UTF-8' \
-      -b 'yyb_muid=17B2343DEB2D65E321172228EA77641F; pac_uid=0_KTt3DYNsi8b8Z; _qimei_uuid42=1970a102c2310007ebc203aff595c4139ad2175825; _qimei_q32=acb3f6354a169e7b700094e94f094fda; _qimei_fingerprint=8395a818348c946821e0972076374252; _qimei_h38=b8856727ebc203aff595c4130200000831970a; _qimei_q36=c482b13c55efd3c408a52a6930001fa19618; RK=mjO8MaM/bT; ptcz=3d4309dd6eaee4e13007b07e31481091cc460b2eefbc803ef1f202f5939288b1; pgv_pvid=1574526232158600; wr_theme=white; yybsdk-webId=746a31300000019ca4ba22374a7df7ce; _qimei_i_3=79ed528a945f59d2c295a8380f8176b3f7eda2a41b0951d6bdd97d587792223a616b65943989e2a3b589; _qimei_i_2=7bcd54d191525289c094ad355ed125b4f4bda0f11a0a0680e589215b2693206d3732369c3e88eabdaa93; _qimei_i_1=47ea7ed09d5255ddc695f96509d771e0f4bff2a7175206d1b08e2b582493206c61633f963980e5dc8788e0e5; wr_ql=0; wr_gid=204641424; wr_skey=f0zq9Rsz; wr_vid=334002187; wr_rt=web%40MTos84svboZ9RlU_G_W_AL; wr_fp=2211339267; wr_localvid=6ae32c50813e8780b6aed0a; wr_name=%E6%88%91; wr_avatar=https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaELbmrKgiabRqibSu3DZpwxccpQ9nrrFAdWsq97e9k4T6W6JC843XgibHmflysxuDyAxpibUFYUDcDencicibicCHibGzq2eKLO7sPG1MMj6mHPXLMTQtw%2F132; wr_gender=1' \
-      -H 'origin: https://weread.qq.com' \
-      -H 'priority: u=1, i' \
-      -H 'referer: https://weread.qq.com/web/reader/b6e32ab071976cc6b6efa56ke4d32d5015e4da3b7fbb1fa' \
-      -H 'sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"' \
-      -H 'sec-ch-ua-mobile: ?0' \
-      -H 'sec-ch-ua-platform: "Windows"' \
-      -H 'sec-fetch-dest: empty' \
-      -H 'sec-fetch-mode: cors' \
-      -H 'sec-fetch-site: same-origin' \
-      -H 'sentry-trace: dd69a1cab61c475c8fc7b86762b6b7f7-91941ac8226c9b73' \
-      -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
-      -H 'x-wrpa-0: a65aa2008ce143dce5e142acb591ef18366d9dc4870e2eb5354ee552c2084a8dccc1ad72462d28621c158e6ff7d48243bf6c68c019d86b42f7a3de20b53ee3c4,VjNJaE1CTTRlVsOzRMKow7gXNigcwp5FGCLCjTnDjcK2D8KCwolBwprDrXx1w74kfMOlw7PDnsOJQsKiw4VMwonChwrCp8Kmfk/CncKhwo5SKsOUw5MDUhXCpsKnAsOPLsKXwqLDplozw6bCrT7CsMK4QnTDtMKuwpMswrPCmVsFPsKIwptXC8KNwrrDkVEow73DuQNIC8Kgw4AiRcKKWcO8w6LCvcK4M8K5wp7DngcSV1DDnFNhK8KvCcKbVE3CjMKRwpJbwqQPTMOyw558w4zDilLDoCxec1NOCcOIw7nDpMOBWWjDtgRDwoTCicK8N0Jdw4BYwrXCuMO7Ay/Cl8Kgakc3HcO1wr3CgsOEw4nDpzzDgsO9woEeX8Kww4HDtFxXCnvCtjDCtsO7bQTConfDvmtdEMOFfUkfwosyWMKqw6fCnsOsKVvDgGd5Ih9Gw65Kw4TCtmHCtx7DlnDCnsO4w4XCpn8fQnvClRrDicOsw5zDg8OHwplkw4jCh8Kb,wrbCu8KLw67CgsOFOMK8w4kOG8Orf8KpG2/DikDCk0LDlsOVaSYqw7XDjsKqVMKpw44yWDnDi1HDrcK3w6bCmRlRV8KuwqjDgsOVPMKuw6HCt1PDmDHCp2VwwpJwHV7DvTMgw4fClcOOcQjDhsKgAm4jZjFNw749BMKlw6Fmw5sRWGIdKnbCq3jCiDzDuRkpbTZtL1ZWK8OzVMO1w5TDjMKbw43CtcKEbsKWB08YBjR+w7HCl8OhclTDuMKfwqBWERbCmMKadsKb' \
-      --data-raw '{"appId":"wb182564874663h1610147354","b":"b6e32ab071976cc6b6efa56","c":"e4d32d5015e4da3b7fbb1fa","ci":5,"co":378,"sm":"文前辅文组织化群体向来是人们生活中非常重","pr":0,"rt":27,"ts":1779324485002,"rn":664,"sg":"68c72dfb0da30ec8f07bcc357e03bfaf257f57961200a424ab515568f1f7b6e6","ct":1779324485,"ps":"a9b322d07a9b089cg019de5","pc":"d55322e07a9b089dg010840","s":"88e88792"}'
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'baggage: sentry-environment=production,sentry-release=dev-1770724961596,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=b7b32988816c4e55bdc3f463d6c800d8' \
+  -H 'content-type: application/json;charset=UTF-8' \
+  -b 'yyb_muid=17B2343DEB2D65E321172228EA77641F; pac_uid=0_KTt3DYNsi8b8Z; _qimei_uuid42=1970a102c2310007ebc203aff595c4139ad2175825; _qimei_q32=acb3f6354a169e7b700094e94f094fda; _qimei_fingerprint=8395a818348c946821e0972076374252; _qimei_h38=b8856727ebc203aff595c4130200000831970a; _qimei_q36=c482b13c55efd3c408a52a6930001fa19618; RK=mjO8MaM/bT; ptcz=3d4309dd6eaee4e13007b07e31481091cc460b2eefbc803ef1f202f5939288b1; pgv_pvid=1574526232158600; wr_theme=white; yybsdk-webId=746a31300000019ca4ba22374a7df7ce; _qimei_i_3=79ed528a945f59d2c295a8380f8176b3f7eda2a41b0951d6bdd97d587792223a616b65943989e2a3b589; _qimei_i_2=7bcd54d191525289c094ad355ed125b4f4bda0f11a0a0680e589215b2693206d3732369c3e88eabdaa93; _qimei_i_1=47ea7ed09d5255ddc695f96509d771e0f4bff2a7175206d1b08e2b582493206c61633f963980e5dc8788e0e5; wr_ql=0; wr_gid=204641424; wr_fp=2211339267; wr_localvid=6ae32c50813e8780b6aed0a; wr_name=%E6%88%91; wr_avatar=https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaELbmrKgiabRqibSu3DZpwxccpQ9nrrFAdWsq97e9k4T6W6JC843XgibHmflysxuDyAxpibUFYUDcDencicibicCHibGzq2eKLO7sPG1MMj6mHPXLMTQtw%2F132; wr_gender=1; wr_pf=undefined; wr_skey=5X73Ffk3; wr_vid=334002187; wr_rt=web%40kJtfxLzvZo5yw9C6sGN_AL' \
+  -H 'origin: https://weread.qq.com' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://weread.qq.com/web/reader/93a322c071defc0e93a3d8bk8f132430178f14e45fce0f7' \
+  -H 'sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sentry-trace: b7b32988816c4e55bdc3f463d6c800d8-85cb8bd18b498196' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
+  -H 'x-wrpa-0: 5d3d941b22c384bd54b76e6179966a481051673049d1966567c124d3b51f31da26c0969970422b2002f2938e3b7e647e0b63f3e528d1bdebab74654814e48e13,KnleZzZ1T2plVsOzRMKow7gXNigcwp5fwpMswo05YcKBwoRAwolBwprCpkHCqngifcO1w6PDnmdYwpUaw7vDqWkxwqfCpn5Pwp3CocKOUirDlMOTwpnCmcKbwqbCpz7CmFUVwqLDplozw5piwrzCsMK4QnTDtMKSw5l7fMKOW8O7FcKIwptXC8KNwrrDkVEow73DucKZwoPChcKgw4AeEsOxw5vDvMOiwr3CuE/CtsKcw54HEldQw6AZNsOkwrgJwpgCTcKMwpHCklvCpA9Mw7LDnnzDjMOKUsOgLDLDhMKYwpbCgsOGw7nDpMOBWWjDtgRDwoTCicOsYndCd3gMNMO7Ay/Cl8KgahDCgB3DtcK9woLDhMOJw6c8GsK3w7NYwpQ+w4HDtFxXCnvCtjDCtsO7bcKBd8K4woXDnMOfw47DhX1JH8KLMsOvwp1Lwqlnw6tbw4BneSIfRnTCgUrCtmHCtx7DlnDCosKvwr4kb8KKw7dkXi0KPsOfwpzDl8KZ,ZMOPw4HDksKKw6zDsGzCl8OWDcOjw4lGFMK1acKXD2vDnR/Ch10mbMKlwrxSQm3CtcKfwpkMw7dkw7ZJU8O4wqTDrcKKMhU3dcKowqfCgsKIwq3Dn8KzU8OPVMKnZXDCknDCh8O5w4TDuMOiwrvDn8OZfnPDscKiXFLDrMOkMU3Dvj0Ew4lWwq0bB3HDmSkrdsKrfMKfK8OYRSo1NcKvwpvDmDFlKMKrwo3Ds8K+w78/b8O4X8KiQlg1GjHCp8K4w65jc0TCi8KNwrdWLE7CmMK0U8OB' \
+  --data-raw '{"appId":"wb182564874663h1610147354","b":"93a322c071defc0e93a3d8b","c":"8f132430178f14e45fce0f7","ci":7,"co":1103,"sm":"解。如果他们不答应，那就努力去理解他们之","pr":10,"rt":34,"ts":1779369568401,"rn":404,"sg":"f69a1506d467fe493de3cbea0118462e285b0bbecd2f8c33143436d3d4c8fee3","ct":1779369568,"ps":"e2e325307a9b1a2fg013f66","pc":"7c0324707a9b1a30g014c33","s":"8d9341e0"}'
 reading:
   mode: smart_random
   target_duration: 45-90
