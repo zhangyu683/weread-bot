@@ -6,24 +6,24 @@ app:
 curl_config:
   content: |-
     curl 'https://weread.qq.com/web/book/read' \
-      -H 'accept: application/json, text/plain, */*' \
-      -H 'accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
-      -H 'baggage: sentry-environment=production,sentry-release=dev-1770724961596,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=5b362bf1b8a44473a072c5b870fc4bcc' \
-      -H 'content-type: application/json;charset=UTF-8' \
-      -b 'yyb_muid=17B2343DEB2D65E321172228EA77641F; pac_uid=0_KTt3DYNsi8b8Z; _qimei_uuid42=1970a102c2310007ebc203aff595c4139ad2175825; _qimei_q32=acb3f6354a169e7b700094e94f094fda; _qimei_fingerprint=8395a818348c946821e0972076374252; _qimei_h38=b8856727ebc203aff595c4130200000831970a; _qimei_q36=c482b13c55efd3c408a52a6930001fa19618; RK=mjO8MaM/bT; ptcz=3d4309dd6eaee4e13007b07e31481091cc460b2eefbc803ef1f202f5939288b1; pgv_pvid=1574526232158600; wr_localvid=6ae32c50813e8780b6aed0a; wr_name=%E6%88%91; wr_gender=1; wr_theme=white; yybsdk-webId=746a31300000019ca4ba22374a7df7ce; _qimei_i_3=79ed528a945f59d2c295a8380f8176b3f7eda2a41b0951d6bdd97d587792223a616b65943989e2a3b589; _qimei_i_2=7bcd54d191525289c094ad355ed125b4f4bda0f11a0a0680e589215b2693206d3732369c3e88eabdaa93; _qimei_i_1=47ea7ed09d5255ddc695f96509d771e0f4bff2a7175206d1b08e2b582493206c61633f963980e5dc8788e0e5; wr_gid=268800352; wr_skey=o0vTojJv; wr_vid=334002187; wr_ql=0; wr_rt=web%405u245Z2Nxi7f_~yG6ss_AL; wr_fp=2268381252; wr_avatar=https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaELbmrKgiabRqibSu3DZpwxccpQ9nrrFAdWsq97e9k4T6W6JC843XgibHmflysxuDyAxpibUFYUDcDencicibicCHibGzq2eKLO7sPG1MMj6mHPXLMTQtw%2F132' \
-      -H 'origin: https://weread.qq.com' \
-      -H 'priority: u=1, i' \
-      -H 'referer: https://weread.qq.com/web/reader/3bf32b80724631ef3bfa8ecke4d32d5015e4da3b7fbb1fa' \
-      -H 'sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"' \
-      -H 'sec-ch-ua-mobile: ?0' \
-      -H 'sec-ch-ua-platform: "Windows"' \
-      -H 'sec-fetch-dest: empty' \
-      -H 'sec-fetch-mode: cors' \
-      -H 'sec-fetch-site: same-origin' \
-      -H 'sentry-trace: 5b362bf1b8a44473a072c5b870fc4bcc-80c9c46c29f6b5b5' \
-      -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36' \
-      -H 'x-wrpa-0: 07d03fc9e687226a875ca8f054c8ec1c0394a5854eeb7ab26eb0068a09a15d510219f7b3ac3322a4164a2e7af0c2be3fcca089713433cc5eeb7132d4ba07a0fc,VkRPSyElWUNlVsOzRMKow7gXNigcwp4yw4RVwo05w43DsMOTFsKJUcKOw65/eMOuIHzDpcOnw57DiTXDpMKGwpBIwrkOwqfCpn5Pwp3CocKOUirDlMOTdA5iwqbCpwJJAsKDwqLDplozw6bCjirCsMK4QnTDtMKuw6TCqsKQwrV6C1rCiMKbVwvCjcK6w5FRKMO9w7l0FHzCoMOAIsODwqZNw7zDosK9wrgzwprCisOeBxJXUMOcJMOnCMKDKMKHwp1NwozCkcKSW8KkD0zDssOefMOMw4pSw6AsXjUPwq3DlcK/w7nDpMOBWWjDtgRDwoTCicK8YxDDnsKdw6NNw5vDuwMvwpfCoGrDgVAdw7XCvcKCw4TDicOnPMOCwqnCucOBA8OHw4HDtFxXCnvCtjDCtsO7bVAwVMOSDElnw4V9SR/CizIeLcOnw5gwwr1bw4BneSIfRsKZFsKzwrZhwrcew5Zwwp5+w6nCsn9LEMO4w4nCnVzCiMOLw4PDi8KZ,ZMOIw5zDrMK2PcKnw7vCg8OVAsO0w51rAMK0a8OxC27DiXnCvmgdwrs1wrIqwoLCiCkILlpFWBrDn1HDrcK3w6bCmRnDl3vCusKow4JTW8Kuw6HCt1PDmDHCp2VwwpJwagLDjG/CtMOHw6LDiFJkwqHCtHVuAHIxTcO+PQTCpcKnOgYHcQXDgSllwpoiwp8Sw5xAPVMyWGUaOnLDsMOgwpt2w7TCj37CpMKTc8KwB002BW5+wqbCv0hxR8KzwqvCtHgjFsKbwrRQwpo=' \
-      --data-raw '{"appId":"wb182564874663h2089991305","b":"3bf32b80724631ef3bfa8ec","c":"e4d32d5015e4da3b7fbb1fa","ci":5,"co":442,"sm":"前言不顾明确的警告——也许正是因为这些警","pr":1,"rt":34,"ts":1778632545492,"rn":111,"sg":"4490e162e4f0b01f0097be995df751a79f6a4aedd829e7d0d470e3f7174b1a8c","ct":1778632545,"ps":"652325107a99fa50g017e88","pc":"78e321807a99fa50g019092","s":"b9b598f2"}'
+    -H 'accept: application/json, text/plain, */*' \
+    -H 'accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+    -H 'baggage: sentry-environment=production,sentry-release=dev-1770724961596,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=1278e84fade84954af53e04f545db70d' \
+    -H 'content-type: application/json;charset=UTF-8' \
+    -b 'yyb_muid=17B2343DEB2D65E321172228EA77641F; pac_uid=0_KTt3DYNsi8b8Z; _qimei_uuid42=1970a102c2310007ebc203aff595c4139ad2175825; _qimei_q32=acb3f6354a169e7b700094e94f094fda; _qimei_fingerprint=8395a818348c946821e0972076374252; _qimei_h38=b8856727ebc203aff595c4130200000831970a; _qimei_q36=c482b13c55efd3c408a52a6930001fa19618; RK=mjO8MaM/bT; ptcz=3d4309dd6eaee4e13007b07e31481091cc460b2eefbc803ef1f202f5939288b1; pgv_pvid=1574526232158600; wr_localvid=6ae32c50813e8780b6aed0a; wr_name=%E6%88%91; wr_gender=1; wr_theme=white; yybsdk-webId=746a31300000019ca4ba22374a7df7ce; _qimei_i_3=79ed528a945f59d2c295a8380f8176b3f7eda2a41b0951d6bdd97d587792223a616b65943989e2a3b589; _qimei_i_2=7bcd54d191525289c094ad355ed125b4f4bda0f11a0a0680e589215b2693206d3732369c3e88eabdaa93; _qimei_i_1=47ea7ed09d5255ddc695f96509d771e0f4bff2a7175206d1b08e2b582493206c61633f963980e5dc8788e0e5; wr_ql=0; wr_fp=2268381252; wr_avatar=https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FPiajxSqBRaELbmrKgiabRqibSu3DZpwxccpQ9nrrFAdWsq97e9k4T6W6JC843XgibHmflysxuDyAxpibUFYUDcDencicibicCHibGzq2eKLO7sPG1MMj6mHPXLMTQtw%2F132; wr_gid=204641424; wr_skey=01pZl2UV; wr_vid=334002187; wr_rt=web%40OjEeEGj2uFCrkYLoB37_AL' \
+    -H 'origin: https://weread.qq.com' \
+    -H 'priority: u=1, i' \
+    -H 'referer: https://weread.qq.com/web/reader/8b832b5071979d0b8b86c0dk697324802676974ce5aceab' \
+    -H 'sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"' \
+    -H 'sec-ch-ua-mobile: ?0' \
+    -H 'sec-ch-ua-platform: "Windows"' \
+    -H 'sec-fetch-dest: empty' \
+    -H 'sec-fetch-mode: cors' \
+    -H 'sec-fetch-site: same-origin' \
+    -H 'sentry-trace: 1278e84fade84954af53e04f545db70d-a43a1dbc9caa77c5' \
+    -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36' \
+    -H 'x-wrpa-0: 47f5279e29d4c8f8aec03020208582e7af0eebe0ffd6315decfb3b9909bb9ef8731ee61b835ad9d8771c3da618f8fa589bccb108a03a203f0d7fe3a69d2cf68c,VVBPc2tNVCllVsOzRMKow7gXNigcwp7Chn4Pwo05bsOwaWvCiUHCmsOtPMKAHSR/w7XDq8OfasKBw6TCrmkQwo7CscKnwqZ+T8KdwqHCjlIqw5TDk8KAw7TCuMKmwqdBSUhOwqLDplozwqV2w6fCsMK4QnTDtMOtw7DCqmjDnFI8w5XCiMKbVwvCjcK6w5FRKMO9w7nCgMOuwqbCoMOAYcODw6zCgMO8w6LCvcK4MMKiwofDngcSV1DCnzDDp8Oww6oAwrB6TcKMwpHCklvCpA9Mw7LDnnzDjMOKUsOgLH01w7XDpG/DpcO5w6TDgVlow7YEQ8KEwonDnG/DnTZkO8O6DMO7Ay/Cl8KgasOBeB3DtcK9woLDhMOJw6c8w6DCqcKFw6vDuR3DgcO0XFcKe8K2MMK2w7ttwrzDvcKswpgkwoTDjcOFfUkfwosyHsO1RMOYworDgFvDgGd5Ih9GbcOsacK2YcK3HsOWcMOdfsKjf1/Chx0QM0XCoRzDi8OE,w7XCmWTDiMOcWcO1PcOtN8KCw4U4wrvDingUwrBpwoQIN8OeQMKbw4fCh8KUw4gRCGXCusOBw7LDscKnwpobw6IeUsO5wpnDrcOHTcO5LXTCvMKkX3LCrsK5wqdWw5gPwqdlcMKScMKew5sWwpVJw4TDtsOIai7DicK5Hy3DuMK/MU3Dvj0EwobCp8OAw7gGXyMYKWbCs3jCiyzDjEc9UzHCt8Kdw4BgM8OSLcKEM8OLP8Kzw4rCklvCphtYNh0kS8K1wpPClXJqwpVdwqNoJxfCmMKaZcOA' \
+    --data-raw '{"appId":"wb182564874663h2089991305","b":"8b832b5071979d0b8b86c0d","c":"697324802676974ce5aceab","ci":5,"co":641,"sm":"[插图]我站在谷仓边废弃的红色火车车厢上","pr":0,"rt":9,"ts":1779322980614,"rn":578,"sg":"4901c148ba7cb456c21cf88862333ba15dd99a7efc87c0d7422b507806168747","ct":1779322980,"ps":"ae9325007a9b0806g011624","pc":"036325507a9b0808g01465f","s":"3de44202"}'
 reading:
   mode: smart_random
   target_duration: 45-90
